@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## Configures and calls coqproject.sh (https://github.com/dwoos/coqproject)
+
+## Configuration options for coqproject.sh
+DIRS=(UniMath/Foundations UniMath/CategoryTheory UniMath/Ktheory UniMath/Dedekind UniMath/SubstitutionSystems UniMath/Tactics)
+NAMESPACE_UniMath_Foundations="UniMath.Foundations"
+NAMESPACE_UniMath_CategoryTheory="UniMath.CategoryTheory"
+NAMESPACE_UniMath_Ktheory="UniMath.Ktheory"
+NAMESPACE_UniMath_Dedekind="UniMath.Dedekind"
+NAMESPACE_UniMath_SubstitutionSystems="UniMath.SubstitutionSystems"
+NAMESPACE_UniMath_Tactics="UniMath.Tactics"
+source coqproject.sh
